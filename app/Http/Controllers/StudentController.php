@@ -34,7 +34,7 @@ class StudentController extends Controller
                 ->make(true);
         }
 
-        return view('dashboard');
+        return view('page.home');
     }
 
     public function store(Request $request)
