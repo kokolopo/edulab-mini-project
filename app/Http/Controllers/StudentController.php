@@ -39,7 +39,6 @@ class StudentController extends Controller
 
     public function store(Request $request)
     {
-
         Student::updateOrCreate(
             [
                 'id' => $request->student_id
@@ -47,7 +46,6 @@ class StudentController extends Controller
             [
                 'name' => $request->name,
                 'class' => $request->class,
-                'status' => '1'
             ]
         );
 
